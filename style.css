@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fce4ec;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff4081;
+  margin-bottom: 20px;
+  animation: text-pop 2s ease-in-out infinite;
+}
+
+.balloons {
+  position: relative;
+}
+
+.balloon {
+  width: 60px;
+  height: 80px;
+  background-color: #ff4081;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.balloon1 {
+  background-color: #ff5252;
+  left: 10%;
+  animation-duration: 5s;
+}
+
+.balloon2 {
+  background-color: #ffca28;
+  left: 30%;
+  animation-duration: 6s;
+}
+
+.balloon3 {
+  background-color: #66bb6a;
+  left: 50%;
+  animation-duration: 7s;
+}
+
+.balloon4 {
+  background-color: #42a5f5;
+  left: 70%;
+  animation-duration: 8s;
+}
+
+.balloon5 {
+  background-color: #ab47bc;
+  left: 90%;
+  animation-duration: 9s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-300px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-pop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
