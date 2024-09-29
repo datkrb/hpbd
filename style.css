@@ -11,6 +11,7 @@ body {
   height: 100vh;
   background-color: #fce4ec;
   font-family: "Arial", sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -22,6 +23,10 @@ h1 {
   color: #ff4081;
   margin-bottom: 20px;
   animation: text-pop 2s ease-in-out infinite;
+}
+
+#name {
+  color: #42a5f5;
 }
 
 .balloons {
@@ -68,6 +73,29 @@ h1 {
   animation-duration: 9s;
 }
 
+button {
+  background-color: #ff4081;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  animation: button-bounce 2s ease-in-out infinite;
+}
+
+button:hover {
+  background-color: #d81b60;
+}
+
+#message {
+  font-size: 1.5rem;
+  color: #ff4081;
+  margin-top: 20px;
+  animation: fade-in 2s ease forwards;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -90,5 +118,24 @@ h1 {
   }
   50% {
     transform: scale(1.2);
+  }
+}
+
+@keyframes button-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>Happy Birthday!</h1>
+      <h1>Happy Birthday <span id="name">[Người được chúc]</span>!</h1>
+      <!-- Chỗ để sửa tên người được chúc -->
       <div class="balloons">
         <div class="balloon balloon1"></div>
         <div class="balloon balloon2"></div>
@@ -17,7 +18,11 @@
         <div class="balloon balloon4"></div>
         <div class="balloon balloon5"></div>
       </div>
+      <button id="revealBtn">Xem lời chúc</button>
+      <p id="message" style="display: none">[Lời chúc ở đây]</p>
+      <!-- Chỗ để sửa lời chúc -->
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
